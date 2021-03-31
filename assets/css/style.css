@@ -60,10 +60,16 @@
 	[ This template has three font typography ]
 		Typography 1: 'cerebri-sans-fonts';
 -------------------------------------------------------------------*/
+
 @font-face{
-    font-family: 'kids_storyregular';
+    font-family: 'Arjona';
+    src: url(../fonts/Arjona.woff2);
+}
+
+@font-face{
+    font-family: 'ProximaNova';
     src: url(../fonts/ProximaNova-Light.ttf);
-  }
+}
 
   @font-face {
     font-family: 'kids_storyregular';
@@ -78,6 +84,7 @@
   font-weight: bold;
 }
 
+
 @font-face {
   font-family: 'kids_storyregular';
   src: url("https://templates.hibootstrap.com/luba/default/assets/fonts/cerebri_sans_fonts/CerebriSansPro-ExtraBold.woff2") format("woff2"), url("https://templates.hibootstrap.com/luba/default/assets/fonts/cerebri_sans_fonts/CerebriSansPro-ExtraBold.woff") format("woff");
@@ -87,7 +94,7 @@
 }
 
 .extra-bold {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: 800;
 }
 
@@ -113,7 +120,7 @@
 }
 
 .light {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: 300;
 }
 
@@ -126,12 +133,12 @@
 }
 
 .heavy {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: 900;
 }
 
 @font-face {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   src: url("https://templates.hibootstrap.com/luba/default/assets/fonts/cerebri_sans_fonts/CerebriSansPro-LightItalic.woff2") format("woff2"), url("https://templates.hibootstrap.com/luba/default/assets/fonts/cerebri_sans_fonts/CerebriSansPro-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
@@ -139,7 +146,7 @@
 }
 
 .light-italic {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: 300;
   font-style: italic;
 }
@@ -153,7 +160,7 @@
 }
 
 .medium {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: 500;
 }
 
@@ -166,7 +173,7 @@
 }
 
 .regular {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: normal;
 }
 
@@ -179,14 +186,14 @@
 }
 
 .semi-bold {
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   font-weight: 600;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'kids_storyregular';
+  font-family: 'Arjona';
   position: relative;
   background-color: #fff;
 }
@@ -1453,12 +1460,12 @@ button:focus, button:active {
 }
 
 .social-btn.social-btn-tw a {
-  background: #55acee;
+  background: #0dbb55;
   color: #fff;
 }
 
 .social-btn.social-btn-ins a {
-  background: #3f729b;
+  background: #e205b2;
   color: #fff;
 }
 
@@ -1482,11 +1489,11 @@ button:focus, button:active {
 }
 
 .social-btn.social-icon-tw a {
-  color: #55acee;
+  color: #0dbb55;
 }
 
 .social-btn.social-icon-ins a {
-  color: #3f729b;
+  color: #e205b2;
 }
 
 .social-btn.social-icon-pin a {
@@ -1986,7 +1993,7 @@ button:focus, button:active {
   margin-left: 0;
   border: 0;
   content: "\e9d0";
-  font-family: "kids_storyregular" !important;
+  font-family: "Arjona" !important;
   position: absolute;
   right: 15px;
 }
@@ -4478,11 +4485,14 @@ button:focus, button:active {
   margin-top: 3px;
 }
 
-.footer-list li:before {
-  content: "\e9e4";
-  font-family: "kids_storyregular" !important;
+.footer-list li::before {
+  content: " ";
+  width: 10px;
+  background: url('../images/icons/right.svg') no-repeat 0 0;
   color: #222222;
-  left: 0;
+  left: 5px;
+  top: 5px;
+  height: 20px;
   position: absolute;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -4796,7 +4806,7 @@ button:focus, button:active {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
-  font-family: "kids_storyregular" !important;
+  font-family: "Arjona" !important;
 
 }
 
@@ -5663,13 +5673,12 @@ button:focus, button:active {
 
 .testimonial-client-bio .testimonial-slider-name {
   font-size: 23px;
-  font-style: italic;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .testimonial-client-bio .testimonial-slider-designation {
-  font-style: italic;
+  font-family: 'ProximaNova';
   font-weight: 600;
 }
 
@@ -5703,9 +5712,9 @@ button:focus, button:active {
 
 .testimonial-client-des h3 {
   font-size: 27px;
-  font-style: italic;
   font-weight: 600;
   margin-bottom: 25px;
+  font-family: 'Arjona';
 }
 
 .testimonial-client-des .testimonial-slider-para {
@@ -8473,7 +8482,7 @@ ol.product-description-list li {
 .rating label:before {
   margin: 5px;
   font-size: 18px;
-  font-family: "kids_storyregular" !important;
+  font-family: "Arjona" !important;
   display: inline-block;
   content: "\ed2e";
 }
@@ -9728,7 +9737,7 @@ ol.product-description-list li {
 
 .custom-control-input:checked ~ .custom-control-label:before {
   content: "\e9da";
-  font-family: "kids_storyregular" !important;
+  font-family: "Arjona" !important;
   line-height: .9;
 }
 
